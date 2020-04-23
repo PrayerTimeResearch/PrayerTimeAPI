@@ -41,3 +41,4 @@ An example of a correct API call is:
 Find an example of a web page that displays a timetable using our API
 url  
   
+https://prayertimeresearch.github.io/PrayerTimeAPI/
