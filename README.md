@@ -1,27 +1,43 @@
-# MoonApi
+# moonsighting.com Prayer Times API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+  
 
-## Development server
+This project is an example for how to integrate moonsighting.com prayer times to any website using the API generated JSON output. The example project is written in Angular 9.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  
 
-## Code scaffolding
+## API Documentation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  
 
-## Build
+The API is very simple, it consists of a signle endpoint and requires the following parameters:
+| Parameter    |Value            |
+|--------------|-----------------|
+|Year|4 digits number eg: 2020
+|tz  |Timezone in this format: Asia/Riyadh      
+|lat |Latitude in Decimal degrees format
+|lon |Longitude in Decimal degrees format
+|both| 0 or 1, if 1, Aser prayer is shown in two different calculation methods
+|time|  0 for 24 hours time format and 1 for 12 hours time format
+|method| single digit that represents the available calculation methods which are thet following
+---------------
+| Entry    |Calculation Method            |
+|--------------|-----------------|
+|0|Hanafi general
+|1  |Hanafi Shafag Abyad      
+|2 |Shafi Shafag Ahmar
+|3 |Shia Jafari
+---------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+An example of a correct API call is:
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+    https://www.moonsighting.com/time_json.php?year=2020&tz=Asia/Riyadh&lat=26.574848&lon=50.0105216&method=0&both=false&time=0
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Integration Example
+Find an example of a web page that displays a timetable using our API
+url  
+  
