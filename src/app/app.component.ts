@@ -36,7 +36,8 @@ export class AppComponent {
   }
 
   make(rerender){
-    let url_prefix = "https://www.moonsighting.com/time_json.php?";
+    //let url_prefix = "https://www.moonsighting.com/time_json.php?";
+    let url_prefix = "https://moonsighting.ahmedbukhamsin.sa/time_json.php?";
     let url_params = `year=${this.year}&tz=${this.tz}&lat=${this.lat}&lon=${this.lng}&method=${this.method}&both=${this.both}&time=${this.format}`;
     console.log(`URL: ${url_prefix + url_params}`);
     this.http.get(url_prefix + url_params).subscribe(data=> {
