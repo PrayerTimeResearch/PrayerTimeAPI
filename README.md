@@ -37,6 +37,10 @@ An example of a correct API call is:
 
     https://www.moonsighting.com/time_json.php?year=2020&tz=Asia/Riyadh&lat=26.574848&lon=50.0105216&method=0&both=false&time=0
 
+    Or if above doesn't work:
+
+    https://moonsighting.ahmedbukhamsin.sa/time_json.php?year=2020&tz=Asia/Riyadh&lat=26.574848&lon=50.0105216&method=0&both=false&time=0
+
 ## Integration Example
 Find an example of a web page that displays a timetable using our API
 url  
