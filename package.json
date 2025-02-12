@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href=/PrayerTimeAPI/",
-    "deploy": "ng build --prod --base-href=/PrayerTimeAPI/",
+    "build": "ng build --configuration production --base-href=/PrayerTimeAPI/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
