@@ -41,7 +41,7 @@ export class AppComponent {
     console.log(`URL: ${url_prefix + url_params}`);
     this.http.get(url_prefix + url_params).subscribe(data=> {
       console.log(data);
-      this.myDataArray = [(<any>data).times];
+      this.myDataArray = (<any>data).times;
       let query = (<any>data).query;
       console.log(`both ${query.both}`);
       if(query.both == "true" && query.method < 3){
